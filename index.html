@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Ninety Nights | الأدمن</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAA/1BMVEUJBQMAAAAZFRItJyQHBgM6NC4jHRmGe28IBQJlW1GQhHgHBANSSkR6c2zny65wZVqnmYwpIhyypJVbVE1za2Pv1rcJBQNDOzX45c1LQzqWjILZx7GbkonRt5rIuKb++Ojt3cq4sabDq5Td1MkXFwCijHaplX5jT0GBbVqCb2K1raTGraPSysLgv50AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABldiMCAAAAQHRSTlP+Af//hf///7T//0r/////////////ev////////////////8L////////////AAAAAAAAAAAAAAAAAAAAAAAAPYbEwwAAAy1JREFUeNqtV4uWoyAMzYCAICig1ncfMzuz7///vUVsp9q1HVubc2pRyCWQS0jg5ZoEQQBHcc2rw2D2a/Spe5YgWgywCWFWws0igABuSPAlQARfSHQbIIQvJbwBEMEiia4BBLBQgnmAEBZLOAdwh/4YAR7SHyGcADZwp2ymABHcLdEEAB6QMUD4CEB4BojgIYk+AeBBOQFsHgXYHAHm+mjKU45Pbwj5p0ScAOCJCTBrABJvgmC2r70i8EQcEgC2E7stEDwxAeZcQLc71v/rnXVPfJAArWvKUmxTQHjiCJhzgS23w8z7kgF9U71NzU5Uu7I5qPESnCNg5hAXedn6RlXuG7Bvvq3LPWdaZ3JsgTvYMLOFPM+Vb8gyb5LSrwaSshRA/QLHY7/NASRxflLKG1HKI1i5pSn+jwowE4ZIHGvvi22ed+/7QQk3ViS9Fy+C0xwAsDx2XiO8y/OP15gOHEhYxQq0DACS341mHDdxzJrGKdFKKp5keCY8XmOpMchtZmzf845SUhVcMmHxcpZ77tq44V3cGIMLYsg2b9BSdYoxxfA9djvRxXHhHSfzXC/WJ8YYQK+xc6b4G3P/8WePtHR+pw7w0etDFXfDxDbPlhqAe4uNfq3824+uS3t29o5dCoAR4W1y2jFutwnhYrAfLdyDasI4UhRHB2YSCEHoFhNcJ/7UPjWcuuohUIuwFRM+XzJRuQjSHgfgzPLMe3CPSNsfqTSlbY1SdB2A6Ba4qoxvJxYbv+jaGpZiklElMCdSITIGmBznuqpBOxLJApgiCUqUmy7NVCp4JSyzmtU4Y+NDPQ0oUlEhGSdas0RXmoha1wRamtUZE7XQrdNW8heaBpTRGmpDBZOCWaMUS5UgXBMoBGR/TGZS6wlSaHUR0s5BtWCADjWkxAweQIQ5MrIKsKMSYYPidA+jSVgXTikbER4nyr2p4VLJWDF7v44vFn7RLesz/VGbzd9tcONuRXJMzyu361Mu15dRIOqpjCiiQBGi7uf++6+of7qO45CL6319grE6xVmfZK1P81YnmutT3fXJ9vp0f33Bsb7kWV90PaHsW194PqH0fULxfVf5/w8UKCel03ljbQAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0a0a;--deep:#070505;--lift:#1b1513;--cream:#ecd9c2;--dim:#b9a28a;--ink:#17100d;--brass:#d9b48f;--line:rgba(236,217,194,.2);--ok:#7fc58a;--wait:#e8c15a;--bad:#e5837b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--cream);font-family:'IBM Plex Sans Arabic',sans-serif;line-height:1.6}
+button,input,select{font-family:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+.top{position:sticky;top:0;z-index:20;background:rgba(7,5,5,.95);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:12px;padding-top:10px;padding-bottom:10px}
+.top img{width:38px;height:38px;border-radius:50%;border:2px solid var(--brass)}
+.top h1{font-size:18px;margin:0;flex:1;color:var(--brass)}
+.btn{border:2px solid var(--brass);background:none;color:var(--brass);border-radius:10px;padding:7px 14px;font-weight:700;font-size:14px;cursor:pointer}
+.btn.fill{background:var(--brass);color:var(--ink)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.filters select,.filters input{background:var(--lift);color:var(--cream);border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:15px;min-width:150px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
+.kpi{background:var(--lift);border:1px solid var(--line);border-radius:14px;padding:14px}
+.kpi .l{color:var(--dim);font-size:13px;font-weight:600}
+.kpi .v{font-size:28px;font-weight:700}
+.kpi .s{color:var(--dim);font-size:12px}
+.panel{background:var(--lift);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:18px}
+.panel h2{margin:0 0 10px;font-size:17px}
+.panel.vote{display:flex;flex-direction:column;justify-content:center}
+.topmovie{font-size:30px;font-weight:700;color:var(--brass);text-align:center;padding:10px 0 4px;line-height:1.4}
+.mvrow{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:8px;padding:9px 8px;border-top:1px solid var(--line);cursor:pointer;align-items:center;font-size:14px}
+.mvrow.head{color:var(--dim);font-size:12px;cursor:default;border-top:0}
+.mvrow.on{background:rgba(217,180,143,.14);border-radius:8px}
+.mvrow b{color:var(--brass)}
+.mvrow small{color:var(--wait);display:block;font-size:11px}
+.btn.fill.closed{background:var(--bad);border-color:var(--bad);color:#3a0d09}
+.seat{cursor:default!important}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.screen{height:18px;margin:0 12% 12px;border-top:3px solid var(--cream);border-radius:50% 50% 0 0/100% 100% 0 0;text-align:center;font-size:11px;color:var(--dim)}
+.seats{display:grid;grid-template-columns:16px repeat(5,1fr) 12px repeat(5,1fr);gap:5px;direction:ltr;max-width:460px;margin:0 auto}
+.rl{font-size:12px;font-weight:700;color:var(--dim);text-align:center;align-self:center}
+.seat{aspect-ratio:1/.85;border-radius:7px 7px 3px 3px;font-size:10px;font-weight:700;padding:0;cursor:pointer;border:2px solid rgba(236,217,194,.35);background:none;color:var(--dim)}
+.seat.sel{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.seat.booked{background:var(--ok);border-color:var(--ok);color:#0e2a14;cursor:default}
+.seat.wait{background:var(--wait);border-color:var(--wait);color:#3b2d00;cursor:default}
+.seat.block{background:#555;border-color:#555;color:#ddd;cursor:default}
+.legend{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:10px;font-size:12px;color:var(--dim)}
+.legend i{display:inline-block;width:12px;height:10px;border-radius:3px;margin-inline-end:5px;vertical-align:middle}
+.list-head{display:flex;align-items:center;gap:10px;margin:6px 0 10px}
+.list-head h2{margin:0;font-size:19px}
+.pill{background:var(--brass);color:var(--ink);border-radius:20px;padding:0 10px;font-weight:700;font-size:14px}
+.card{background:var(--lift);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:10px;display:grid;grid-template-columns:1fr auto;gap:8px 14px;align-items:center}
+@media(max-width:620px){.card{grid-template-columns:1fr}}
+.card b{font-size:16px}
+.meta{color:var(--dim);font-size:13px}
+.meta strong{color:var(--cream)}
+.badge{display:inline-block;border-radius:20px;padding:1px 10px;font-size:12px;font-weight:700;margin-inline-start:8px}
+.badge.wait{background:rgba(232,193,90,.18);color:var(--wait)}
+.badge.ok{background:rgba(127,197,138,.18);color:var(--ok)}
+.badge.bad{background:rgba(229,131,123,.18);color:var(--bad)}
+.acts{display:flex;gap:7px;flex-wrap:wrap}
+.acts button{border:0;border-radius:8px;padding:7px 12px;font-weight:700;font-size:13px;cursor:pointer}
+.a-ok{background:var(--ok);color:#0e2a14}.a-bad{background:var(--bad);color:#3a0d09}.a-wa{background:#25d366;color:#06210f}
+.empty{text-align:center;color:var(--dim);padding:30px}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;padding:16px;z-index:100;overflow-y:auto}
+.ov.show{display:flex}
+.box{background:var(--cream);color:var(--ink);border-radius:16px;padding:22px;width:100%;max-width:360px}
+.box h2{margin:0 0 12px;font-size:20px}
+.box input[type=text],.box input[type=password],.box input[type=date],.box input[type=number],.box input[type=tel]{width:100%;margin-bottom:9px;padding:11px 12px;border:2px solid rgba(23,16,13,.2);border-radius:10px;font-size:15px;background:#fffaf0;color:var(--ink)}
+.box label.chk{display:block;margin:4px 0 12px;font-weight:700;font-size:14px}
+.box .go{width:100%;background:var(--bg);color:var(--cream);border:0;border-radius:10px;padding:12px;font-weight:700;font-size:16px;cursor:pointer}
+.box .no{width:100%;background:none;border:0;color:var(--ink);padding:10px;font-weight:700;cursor:pointer}
+.err{color:#9b1c1c;font-weight:700;font-size:13px;min-height:20px;margin-bottom:6px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--brass);color:var(--ink);padding:10px 20px;border-radius:12px;font-weight:700;transition:.25s;z-index:200}
+.toast.show{transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+  <img alt="" src="data:image/png;base64,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">
+  <h1>الأدمن — Ninety Nights</h1>
+  <button class="btn" id="refresh">تحديث</button>
+  <button class="btn" id="logout">خروج</button>
+</div></div>
+
+<main class="wrap">
+  <div class="filters">
+    <select id="fDate" aria-label="التاريخ"></select>
+    <select id="fStatus" aria-label="الحالة">
+      <option value="">كل الحالات</option><option value="انتظار">انتظار</option><option value="محجوز">محجوز</option><option value="ملغي">ملغي</option>
+    </select>
+    <select id="fMovie" aria-label="الفيلم"><option value="">كل الأفلام</option></select>
+    <input id="fSearch" type="search" placeholder="بحث بالاسم أو الموبايل">
+    <button class="btn fill" id="toggleBtn">…</button>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi"><div class="l">حجوزات</div><div class="v" id="kBook">0</div><div class="s" id="kBookS">&nbsp;</div></div>
+    <div class="kpi"><div class="l">كراسي محجوزة</div><div class="v" id="kSeats">0</div><div class="s" id="kSeatsS">&nbsp;</div></div>
+    <div class="kpi"><div class="l">في الانتظار</div><div class="v" id="kWait">0</div><div class="s" id="kWaitS">&nbsp;</div></div>
+    <div class="kpi"><div class="l">ملغية</div><div class="v" id="kCan">0</div><div class="s">حجوزات</div></div>
+    <div class="kpi"><div class="l">الإيراد المؤكد</div><div class="v" id="kRev">0</div><div class="s">جنيه</div></div>
+  </div>
+
+  <div class="two">
+    <div class="panel">
+      <h2 id="mapTitle">خريطة الكراسي</h2>
+      <div class="screen">الشاشة</div>
+      <div class="seats" id="seats"></div>
+      <div class="legend"><span><i style="border:2px solid rgba(236,217,194,.5)"></i>فاضي</span><span><i style="background:var(--ok)"></i>محجوز</span><span><i style="background:var(--wait)"></i>انتظار</span><span><i style="background:#555"></i>مقفول</span></div>
+    </div>
+    <div class="panel vote">
+      <h2>أكتر فيلم متصوَّت عليه للسهرة الجاية</h2>
+      <div class="topmovie" id="topMovie">—</div>
+      <div class="meta" id="topMovieS" style="text-align:center"></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>الإيراد حسب الفيلم <span class="meta" id="mvSub"></span></h2>
+    <div id="mvTable"></div>
+    <div class="meta" style="margin-top:8px">اضغط على فيلم عشان تشوف حجوزاته وخريطة كراسيه</div>
+  </div>
+
+  <div class="list-head"><h2>الحجوزات</h2><span class="pill" id="count">0</span></div>
+  <div id="list"><div class="empty">جاري التحميل…</div></div>
+</main>
+
+<div class="ov" id="login"><div class="box">
+  <h2>دخول الأدمن</h2>
+  <input type="password" id="pass" placeholder="كلمة السر" autocomplete="current-password">
+  <div class="err" id="loginErr"></div>
+  <button class="go" id="loginBtn">دخول</button>
+</div></div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const API_URL = "https://script.google.com/macros/s/AKfycbzdOlfCaUqqc4S_KxHYQbSJ7H7JdG33qALSow3uZnntUpH5rF_IGyAb_v5E1I9fKq-yRw/exec"; // نفس رابط الصفحة الأساسية
+const NAME = "Ninety Nights";
+const ROWS = "ABCDEFG";
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+let pass = ''; try { pass = localStorage.getItem('mn_admin') || ''; } catch (e) {}
+const savePass = p => { pass = p; try { localStorage.setItem('mn_admin', p); } catch (e) {} };
+const clearPass = () => { pass = ''; try { localStorage.removeItem('mn_admin'); } catch (e) {} };
+
+let all = [], votes = [], price = 200, bookingOpen = true, busy = false;
+
+function toast(m) { const t = $('toast'); t.textContent = m; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 2200); }
+function showLogin(msg) { $('loginErr').textContent = msg || ''; $('pass').value = ''; $('login').classList.add('show'); $('pass').focus(); }
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+async function api(action, data) {
+  const body = JSON.stringify(Object.assign({ action, pass }, data || {}));
+  let res;
+  for (let i = 0; i < 3; i++) {
+    try {
+      const r = await fetch(API_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body });
+      res = await r.json();
+    } catch (e) {
+      if (action !== 'admin_list' || i === 2) throw e;      // التحميل بس بيعيد المحاولة لوحده
+      await sleep(800 * (i + 1)); continue;
+    }
+    if (res && res.error === 'busy' && i < 2) { await sleep(1500); continue; }
+    break;
+  }
+  if (res && res.error === 'unauthorized') { clearPass(); showLogin('كلمة السر غلط'); throw new Error('unauthorized'); }
+  if (res && res.error === 'set_admin_pass') { showLogin('غيّر ADMIN_PASS في Code.gs الأول وانشر نسخة جديدة'); throw new Error('set_admin_pass'); }
+  return res;
+}
+
+async function load() {
+  if (!pass) { showLogin(); return; }
+  try {
+    const res = await api('admin_list');
+    if (!res || !res.ok) { $('list').innerHTML = '<div class="empty">حصل خطأ في التحميل</div>'; return; }
+    $('login').classList.remove('show');
+    all = res.bookings || []; price = res.price || price; votes = res.votes || []; bookingOpen = res.booking_open !== false; renderToggle();
+    fillDates(); fillMovies(); render();
+  } catch (e) {
+    if (!/unauthorized|set_admin_pass/.test(e.message)) $('list').innerHTML = '<div class="empty">ماقدرناش نوصل للسيرفر</div>';
+  }
+}
+
+function fillDates() {
+  const sel = $('fDate'), cur = sel.value;
+  const dates = [...new Set(all.map(b => b.date))].sort().reverse();
+  const today = new Date().toLocaleDateString('en-CA');
+  const upcoming = dates.filter(d => d >= today).pop() || dates[0] || '';
+  sel.innerHTML = '<option value="">كل التواريخ</option>' + dates.map(d => '<option value="' + esc(d) + '">' + esc(dayLabel(d)) + '</option>').join('');
+  sel.value = cur && (cur === '' || dates.includes(cur)) ? cur : upcoming;
+}
+function fillMovies() {
+  const sel = $('fMovie'), cur = sel.value;
+  const ms = [...new Set(all.filter(b => b.phone !== '-' && b.movie).map(mv))].sort();
+  sel.innerHTML = '<option value="">كل الأفلام</option>' + ms.map(m => '<option value="' + esc(m) + '">' + esc(m) + '</option>').join('');
+  sel.value = ms.includes(cur) ? cur : '';
+}
+function dayLabel(d) {
+  const x = new Date(d + 'T00:00:00');
+  return isNaN(x) ? d : x.toLocaleDateString('ar-EG', { weekday: 'long', day: 'numeric', month: 'long' });
+}
+const NOMOV = 'بدون فيلم';
+const mv = b => b.movie || NOMOV;
+const isCan = b => b.status === 'ملغي';
+const isWait = b => b.status === 'انتظار';
+
+function render() {
+  const fd = $('fDate').value, fm = $('fMovie').value, fs = $('fStatus').value, q = $('fSearch').value.trim().toLowerCase();
+  const rows = all.filter(b => (!fd || b.date === fd) && (!fm || mv(b) === fm) && (!fs || b.status === fs) &&
+    (!q || (b.name + ' ' + b.phone).toLowerCase().includes(q)));
+  // KPIs على التاريخ المختار (من غير فلتر الحالة/البحث)
+  const day = all.filter(b => (!fd || b.date === fd) && (!fm || mv(b) === fm) && b.phone !== '-');   // من غير الكراسي المقفولة
+  const booked = day.filter(b => b.status === 'محجوز'), wait = day.filter(isWait), can = day.filter(isCan);
+  const sum = (a, k) => a.reduce((s, b) => s + (Number(b[k]) || 0), 0);
+  $('kBook').textContent = booked.length + wait.length;
+  $('kBookS').textContent = (fd ? dayLabel(fd) : 'كل التواريخ') + (fm ? ' · ' + fm : '');
+  $('kSeats').textContent = sum(booked, 'count');
+  $('kSeatsS').textContent = 'من ' + 70;
+  $('kWait').textContent = wait.length;
+  $('kWaitS').textContent = sum(wait, 'count') + ' كرسي · ' + sum(wait, 'total') + ' جنيه';
+  $('kCan').textContent = can.length;
+  $('kRev').textContent = sum(booked, 'total');
+  $('count').textContent = rows.length;
+  drawMap(fd, fm); drawMovies(fd, fm); drawTopMovie();
+
+  rows.sort((a, b) => a.date === b.date ? b.time.localeCompare(a.time) : b.date.localeCompare(a.date));
+  if (!rows.length) { $('list').innerHTML = '<div class="empty">مفيش حجوزات مطابقة</div>'; return; }
+  $('list').innerHTML = rows.map(b => {
+    const cls = isCan(b) ? 'bad' : isWait(b) ? 'wait' : 'ok';
+    const actions = (isCan(b) ? '<button class="a-ok" data-act="محجوز" data-row="' + b.row + '">استرجاع</button>'
+      : (isWait(b) ? '<button class="a-ok" data-act="محجوز" data-row="' + b.row + '">تأكيد الحجز</button>' : '') +
+        '<button class="a-bad" data-act="ملغي" data-row="' + b.row + '">إلغاء</button>') +
+      (b.phone && b.phone !== '-' ? '<button class="a-wa" data-wa="' + b.row + '">واتساب</button>' : '');
+    return '<div class="card"><div><b>' + esc(b.name) + '</b><span class="badge ' + cls + '">' + esc(b.status) + '</span>' +
+      '<div class="meta">📅 <strong>' + esc(dayLabel(b.date)) + '</strong> · 🎟️ <strong>' + esc(b.seats.join('، ')) + '</strong> (' + b.count + ') · 💰 <strong>' + b.total + ' جنيه</strong></div>' +
+      '<div class="meta">📱 ' + esc(b.phone) + ' · ⏱ ' + esc(b.time) + (b.movie ? ' · 🎬 ' + esc(b.movie) : '') + (isWait(b) ? (b.proof ? ' · 📩 بعت الإثبات' : ' · ⏳ مستني الدفع (بيتلغي بعد 15 دقيقة)') : '') + (b.order ? ' · 🍿 ' + esc(b.order) : '') + '</div></div>' +
+      '<div class="acts">' + actions + '</div></div>';
+  }).join('');
+}
+
+function drawMap(date, fm) {
+  $('mapTitle').textContent = 'خريطة الكراسي' + (date ? ' — ' + dayLabel(date) : '') + (fm ? ' — ' + fm : '');
+  const inMovie = b => !fm || b.phone === '-' || mv(b) === fm;
+  if (!date) { $('seats').innerHTML = '<div class="empty" style="grid-column:1/-1">اختار تاريخ عشان تشوف الخريطة</div>'; return; }
+  const state = {};
+  all.filter(b => b.date === date && !isCan(b) && inMovie(b)).forEach(b => b.seats.forEach(s => {
+    state[s] = b.phone === '-' ? 'block' : isWait(b) ? 'wait' : 'booked';
+  }));
+  const info = {};
+  all.filter(b => b.date === date && !isCan(b) && inMovie(b)).forEach(b => b.seats.forEach(s => info[s] = b.name));
+  let h = '';
+  for (const r of ROWS) {
+    h += '<div class="rl">' + r + '</div>';
+    for (let n = 1; n <= 10; n++) {
+      if (n === 6) h += '<div></div>';
+      const id = r + n, st = state[id];
+      h += '<button class="seat ' + (st || '') + '" disabled' + (st ? ' title="' + esc(info[id]) + '"' : '') + '>' + n + '</button>';
+    }
+  }
+  $('seats').innerHTML = h;
+}
+
+function drawMovies(fd, fm) {
+  const g = {};
+  all.filter(b => b.phone !== '-' && b.movie && !isCan(b) && (!fd || b.date === fd)).forEach(b => {
+    const k = mv(b), x = g[k] || (g[k] = { n: 0, seats: 0, rev: 0, wait: 0 });
+    x.n++; x.seats += Number(b.count) || 0;
+    if (isWait(b)) x.wait += Number(b.total) || 0; else x.rev += Number(b.total) || 0;
+  });
+  const keys = Object.keys(g).sort((a, b) => g[b].rev - g[a].rev);
+  $('mvSub').textContent = fd ? '— ' + dayLabel(fd) : '— كل التواريخ';
+  if (!keys.length) { $('mvTable').innerHTML = '<div class="empty">مفيش حجوزات</div>'; return; }
+  $('mvTable').innerHTML = '<div class="mvrow head"><span>الفيلم</span><span>حجوزات</span><span>كراسي</span><span>إيراد مؤكد</span></div>' +
+    keys.map(k => '<div class="mvrow' + (k === fm ? ' on' : '') + '" data-mv="' + esc(k) + '"><b>' + esc(k) + '</b><span>' + g[k].n + '</span><span>' + g[k].seats + '</span><span>' + g[k].rev + ' جنيه' +
+      (g[k].wait ? '<small>+ ' + g[k].wait + ' انتظار</small>' : '') + '</span></div>').join('');
+}
+
+function drawTopMovie() {
+  const counts = {};
+  if (Array.isArray(votes)) votes.forEach(v => {
+    const n = typeof v === 'string' ? v : (v && (v.movie || v.film || v.name || v.title));
+    if (n) counts[n] = (counts[n] || 0) + ((v && Number(v.count)) || 1);
+  });
+  else if (votes && typeof votes === 'object') Object.entries(votes).forEach(([n, c]) => counts[n] = Number(c) || 0);
+  const top = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
+  $('topMovie').textContent = top ? top[0] : 'لسه مفيش تصويت';
+  $('topMovieS').textContent = top ? top[1] + ' صوت' : '';
+}
+
+async function setStatus(row, status) {
+  if (busy) return; busy = true;
+  try {
+    const r = await api('admin_status', { row, status });
+    if (r.ok) { toast('اتسجلت الحالة: ' + status); await load(); }
+    else toast(r.error === 'seat_taken' ? 'الكراسي دي اتحجزت لحد تاني: ' + (r.taken_ids || []).join('، ') : 'حصل خطأ');
+  } catch (e) { if (!/unauthorized|set_admin_pass/.test(e.message)) toast('ماقدرناش نوصل للسيرفر'); }
+  busy = false;
+}
+
+function waMessage(b) {
+  const head = isWait(b) ? '⏳ *حجزك في انتظار تأكيد الدفع*' : '✅ *تم تأكيد حجزك*';
+  const lines = ['*' + NAME + '*', head, '', '👤 ' + b.name, '🎟️ الكراسي: ' + b.seats.join('، ') + ' (' + b.count + ')', '💰 الإجمالي: ' + b.total + ' جنيه', '📅 ' + dayLabel(b.date)];
+  if (b.movie) lines.splice(2, 0, '🎬 ' + b.movie);
+  if (isWait(b)) lines.push('', 'ابعتلنا صورة التحويل عشان نأكد الحجز 🙏');
+  else if (!isCan(b)) lines.push('', 'منتظرينك! 🎬🍿');
+  return lines.join('\n');
+}
+function openWa(b) {
+  let n = String(b.phone).replace(/\D/g, ''); if (n.startsWith('0')) n = '2' + n;
+  window.open('https://wa.me/' + n + '?text=' + encodeURIComponent(waMessage(b)), '_blank');
+}
+
+/* ---------- أحداث ---------- */
+$('list').addEventListener('click', e => {
+  const a = e.target.closest('[data-act]'), w = e.target.closest('[data-wa]');
+  if (a) setStatus(Number(a.dataset.row), a.dataset.act);
+  if (w) openWa(all.find(b => b.row === Number(w.dataset.wa)));
+});
+['fDate', 'fMovie', 'fStatus'].forEach(id => $(id).addEventListener('change', () => render()));
+$('fSearch').addEventListener('input', render);
+$('mvTable').addEventListener('click', e => {
+  const r = e.target.closest('[data-mv]'); if (!r) return;
+  $('fMovie').value = $('fMovie').value === r.dataset.mv ? '' : r.dataset.mv;
+  render();
+});
+$('refresh').addEventListener('click', load);
+$('logout').addEventListener('click', () => { clearPass(); all = []; showLogin(); });
+function doLogin() { const v = $('pass').value; if (!v) return; savePass(v); load(); }
+$('loginBtn').addEventListener('click', doLogin);
+$('pass').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+
+function renderToggle() {
+  const b = $('toggleBtn');
+  b.textContent = bookingOpen ? '🔒 الحجز مفتوح — اضغط للقفل' : '🔓 الحجز مقفول — اضغط للفتح';
+  b.classList.toggle('closed', !bookingOpen);
+}
+$('toggleBtn').addEventListener('click', async () => {
+  if (busy) return;
+  const want = !bookingOpen;
+  if (!want && !confirm('تقفل الحجز؟ محدش هيقدر يحجز لحد ما تفتحه تاني.')) return;
+  busy = true;
+  try {
+    const r = await api('admin_booking', { open: want });
+    if (r.ok) { bookingOpen = r.booking_open !== false; renderToggle(); toast(bookingOpen ? 'الحجز اتفتح' : 'الحجز اتقفل'); }
+    else toast('حصل خطأ');
+  } catch (e) { if (!/unauthorized|set_admin_pass/.test(e.message)) toast('ماقدرناش نوصل للسيرفر'); }
+  busy = false;
+});
+renderToggle();
+
+load();
+</script>
+</body>
+</html>
